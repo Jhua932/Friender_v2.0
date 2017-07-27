@@ -2,7 +2,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: pink;
+  background-color: #8DD5F0;
 }
 .topnav {
     background-color: #333;
@@ -43,4 +43,13 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+/*IMPORT PROFILE WRAPPER STYLING*/
+#profile_match_1{
+  border: 6px solid black;
+}
+
+#profile_match_2{
+  border: 6px solid black;
 }
