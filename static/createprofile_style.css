@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: pink;
+  background-color: #8DD5F0;
 }
 .topnav {
     background-color: #333;
@@ -45,3 +45,13 @@ body {
 }
 
 /*INPUT FORM STYLES*/
+#CreateProfileStyles{
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid #000;
+  padding: 20px;
+}
+
+h2{text-align: center;
+color:red;}
