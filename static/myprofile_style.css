@@ -48,7 +48,7 @@ body {
 /*FUNCTIONAL STYLING*/
 #myProfileBody {
   padding: 15px;
-  border: 10px solid black;
+  border: 10px solid #046680;
   margin: 0px 30px 10px 30px;
 }
 #myProfileBody h1 {
@@ -81,6 +81,9 @@ body {
 #hobbies h1{
   text-align: center;
 }
+#myProfilePhoto img {
+  padding-left: 15%;
+}
 #aboutQuote {
   width: 25%;
   padding: 10px;
@@ -100,7 +103,7 @@ body {
 }
 #myProfileComments {
   padding: 15px;
-  border: 10px solid black;
+  border: 10px solid #046680;
   margin: 0px 30px 10px 30px;
 }
 #myProfileComments h1 {
