@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <ul>
+    {% for user in theUsers %}
+      <li>
+        <h1> {{ user.first_name }} {{ user.last_name }}
+        <h3> About you: {{ user.about_you }}
+        <h3> Favorite Hobby: {{ user.favorite_hobby }}
+        <ul>
+        {% for theHobby in user.hobbies %}
+          <li>Hobby: {{ theHobby }}</li>
+        {% endfor %}
+        </ul>
+        <h2> Social Media Accounts </h2>
+        <h3> Instagram: {{ user.instagram_account }}
+        <h3> Facebook: {{ user.facebook_account }}
+        <h3> Snapchat: {{ user.snapchat_account }}
+        <h3> Phone Number: {{ user.phone_number }}
+        <br>
+      </li>
+    {% endfor %}
+    </ul>
+
+
+  </body>
+</html>
