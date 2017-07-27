@@ -27,22 +27,23 @@ class MainHandler(webapp2.RequestHandler):
             user_users = user_query.fetch()
 
             if user_users == []:
-                self.response.write("There is a user but he hasnt made account yet")
-                greeting = ('Welcome, %s! (<a href="createprofile.html">Create Your Profile Now</a>)' %
+                greeting = ('Welcome, %s! <br><br><br><a href="createprofile.html" class="button">Create Profile</a>' %
                     (user.nickname()))
             else:
-                self.response.write("There is a user and he has made his accound already")
-                greeting = ('Welcome, %s! (<a href="home.html">Go To Home</a>)' %
+                greeting = ('Welcome, %s! <br><br><br><a href="home.html" class="button">Go To Home</a>' %
                     (user.nickname()))
 
         else:
-            self.response.write("There is not a user and he has not made an account")
-            greeting = ('<a href="%s">Sign in or register</a>.' %
+            greeting = ('<a href="%s" class="button">Sign in or register</a>' %
                 users.create_login_url('/'))
 
-        self.response.write('<html><body>%s</body></html>' % greeting)
+        template_variables = {
+            'theGreeting':greeting
+        }
+
+        self.response.write('<html><body><br></body></html>')
         main_template = env.get_template("index.html")
-        self.response.write(main_template.render())
+        self.response.write(main_template.render(template_variables))
 
 
 
