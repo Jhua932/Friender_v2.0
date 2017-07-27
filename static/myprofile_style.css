@@ -72,6 +72,15 @@ body {
   padding: 10px;
   border-right: 3px solid #046680;
 }
+#myProfileAbout h1 {
+  text-align: center;
+}
+#socialMedia h1 {
+  text-align: center;
+}
+#hobbies h1 {
+  text-align: center;
+}
 #aboutQuote {
   width: 25%;
   padding: 10px;
@@ -85,9 +94,6 @@ body {
 #hobbies {
   width: 25%;
   padding: 10px;
-}
-#myProfilePhoto{
-  height: 150px;
 }
 #aboutMeInfo {
   /*border: 5px solid red;*/
